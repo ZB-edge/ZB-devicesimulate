@@ -16,4 +16,6 @@ spring:
 server:
   edgex: localhost
   port: 8102
+edge:
+  ip: localhost
 mq: activemq
