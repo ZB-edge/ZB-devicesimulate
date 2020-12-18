@@ -46,10 +46,10 @@ public class Init implements ApplicationRunner {
             }
             if (i>=39){
                 i=0;
-                break;
+                continue;
             }
             i++;
-            Thread.sleep(3000);
+            Thread.sleep(1000);
         }
     }
 }
