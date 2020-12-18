@@ -10,7 +10,6 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Date;
 
 @Component
 @Order(1)
@@ -41,9 +40,10 @@ public class Init implements ApplicationRunner {
             js.add("temperature",temperature[i]);
             js.add("oilTemperature",oilTemperature[i]);
             js.add("firstOil",firstOil[i]);
-            String result = restTemplate.postForObject(url,js,String.class);
-            System.out.println(new Date());
-            System.out.println(result);
+            try {
+                restTemplate.postForObject(url,js,String.class);
+            }catch (Exception ignored){
+            }
             if (i>=39){
                 i=0;
                 break;
