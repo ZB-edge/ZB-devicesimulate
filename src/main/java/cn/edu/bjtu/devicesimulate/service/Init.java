@@ -30,7 +30,7 @@ public class Init implements ApplicationRunner {
         int[] temperature = new int[]{20,58,80,82,65,85,27,26,74,28,21,33,64,18,49,47,58,43,39,32,17,16,33,39,81,22,35,69,31,56,41,37,80,66,81,62,54,22,75,27};
         int[] oilTemperature = new int[]{51,93,108,75,105,59,35,47,82,36,96,122,99,60,114,27,92,65,32,55,115,98,68,58,28,56,45,114,67,49,40,72,69,120,95,76,26,123,92,92};
         int[] firstOil = new int[]{270,264,258,252,246,240,234,228,222,216,210,204,198,192,186,180,174,168,162,156,150,144,138,132,126,120,114,108,102,96,90,84,78,72,66,60,54,48,42,36};
-        String url = "http://" +ip+ ":8095/api/perception/simulate/装甲兵1旅/08式步战车/08式步战车-1-1";
+        String url = "http://" +ip+ ":8095/api/perception/exportSimulate/装甲兵1旅/08式步战车/08式步战车-1-1";
         int i = 0;
         while (true){
             MultiValueMap<String, Integer> js = new LinkedMultiValueMap<>();
